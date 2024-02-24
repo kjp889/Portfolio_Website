@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Coding Portfolio</title>
+
+	<link rel="icon" type="image/x-icon" href="img/0.ico">
+
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+</head>
+<body class="book_body">
+    <header class="header">
+		<a href="index.html#home" class="logo"><i class="myIcon"></i>P<span class="logo_span">ARRIS</span></a>
+
+		<i class='bx bx-menu' id="menu-icon"></i>
+
+		<nav class="navbar">
+			<a href="index.html">Home</a>
+			<a href="index.html#about">About</a>
+			<a href="index.html#skill">Skills</a>
+			<a href="index.html#portfolio" class="active">Portfolio</a>
+			<a href="index.html#contact">Contact</a>
+		</nav>
+	</header>
+
+    <div class="wrapper">
+        <div class="cover_left cover"></div>
+        <div class="cover_right cover"></div>
+
+        <div class="book">
+            <div class="book_page page_left">
+                <div class="page_front">
+                    <h1>Simple JavaScript Calculator</h1>
+
+                    <div class="project_box">
+                        <div class="img_box">
+                            <img src="assets/img/simpleJavaCal.jpg" alt="">
+                        </div>
+                        
+                        <div class="details_box">
+                            <p>Tech Used:</p>
+                            <p>This is a simple calculator that allows the user to enter values into a text field and then select an operation from the list using a radio button and displays the results in an uneditable textfield.</p>
+                        </div>
+
+                        <div class="btn_box">
+                            <a href="#" class="btn">Source Code</a>
+                        </div>
+                    </div>
+
+                    <span class="page_number">1</span>
+
+                </div>
+            </div>
+
+            <div class="book_page page_right turn" id="turn_1">
+                <!--page 1-->
+                <div class="page_front">
+                    <h1>test2</h1>
+
+                    <span class="page_number">1</span>
+
+                    <span class="nextprev_btn" data-page="turn_1">
+                        <i class='bx bx-chevrons-right' ></i>
+                    </span>
+                </div>
+                
+
+                <!--page 2-->
+                <div class="page_back">
+                    <h1>test3</h1>
+
+                    <span class="page_number">2</span>
+
+                    <span class="nextprev_btn back" data-page="turn_1">
+                        <i class='bx bx-chevrons-left' ></i>
+                    </span>
+                </div>
+            </div>
+
+            <div class="book_page page_right turn" id="turn_2">
+                <!--page 3-->
+                <div class="page_front">
+                    <h1>test4</h1>
+
+                    <div class="project_box">
+                        <div class="img_box">
+                            <img src="assets/img/photography.jpeg" alt="">
+                        </div>
+                        
+                        <div class="details_box">
+                            <p>Tech Used:</p>
+                            <p>tgdhghjhfgjhmkjljkhghfggnmn,m,kjhgfghhjhggfxfgh</p>
+                        </div>
+
+                        <div class="btn_box">
+                            <a href="#" class="btn">Source Code</a>
+                        </div>
+                    </div>
+
+                    <span class="page_number">3</span>
+
+                    <span class="nextprev_btn" data-page="turn_2">
+                        <i class='bx bx-chevrons-right' ></i>
+                    </span>
+                </div>
+                
+
+                <!--page 4-->
+                <div class="page_back">
+                    <h1>test5</h1>
+
+                    <span class="page_number">4</span>
+
+                    <span class="nextprev_btn back" data-page="turn_2">
+                        <i class='bx bx-chevrons-left' ></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script type="text/javascript" src="assets/bookScript.js"></script>
+    <script type="text/javascript" src="assets/script.js"></script>
+</body>
+</html>
