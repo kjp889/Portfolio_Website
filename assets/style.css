@@ -915,3 +915,30 @@ span {
 		transform: translateY(19);
 	}
 }
+
+/*=================photos======================*/
+.photo_marquee{
+	width: auto;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.photo_image_box{
+	width: 70%;
+	display: inline;
+}
+
+.photo_image_box img{
+	width: 80%;
+	display: inline;
+	animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee{
+	0%{
+		transform: translateX(3%);
+	}
+	100%{
+		transform: translateX(-380%);
+	}
+}
