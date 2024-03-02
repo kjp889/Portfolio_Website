@@ -800,11 +800,18 @@ span {
 	height: 15rem;
 	border: var(--book-border);
 	border-radius: .5rem;
+	border-width: .3rem;
+	overflow: hidden;
 }
 
 .project_box .img_box img {
 	width: 100%;
 	object-fit: cover;
+	transition: .5s ease;
+}
+
+.project_box .img_box:hover img {
+	transform: scale(1.1);
 }
 
 .project_box .details_box {
@@ -926,12 +933,20 @@ span {
 .photo_image_box{
 	width: 70%;
 	display: inline;
+	transition: .5s ease;
 }
 
 .photo_image_box img{
 	width: 80%;
 	display: inline;
-	animation: marquee 10s linear infinite;
+	animation: marquee 50s linear infinite;
+	border-color: var(--main-color);
+	border: solid var(--main-color);
+	transition: .5s ease;
+}
+
+.photo_marquee:hover img{
+	animation-play-state: paused;
 }
 
 @keyframes marquee{
@@ -941,4 +956,21 @@ span {
 	100%{
 		transform: translateX(-380%);
 	}
+}
+
+.insta_link{
+	color: var(--text-color);
+}
+
+.git_link{
+	text-align: center;
+}
+
+.git_link a{
+	font-size: 4.5rem;
+	color: var(--book-text-color);
+}
+
+.photo_footer{
+	text-align: center;
 }
