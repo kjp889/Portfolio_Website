@@ -924,10 +924,16 @@ span {
 }
 
 /*=================photos======================*/
+.album_body {
+	background: var(--bg-color);
+	color: var(--text-color);
+}
+
 .photo_marquee{
 	width: auto;
 	overflow: hidden;
 	white-space: nowrap;
+	padding-top: 5rem;
 }
 
 .photo_image_box{
@@ -937,9 +943,9 @@ span {
 }
 
 .photo_image_box img{
-	width: 80%;
+	width: 60%;
 	display: inline;
-	animation: marquee 50s linear infinite;
+	animation: marquee 90s linear infinite;
 	border-color: var(--main-color);
 	border: solid var(--main-color);
 	transition: .5s ease;
@@ -954,7 +960,7 @@ span {
 		transform: translateX(3%);
 	}
 	100%{
-		transform: translateX(-380%);
+		transform: translateX(-2550%);
 	}
 }
 
