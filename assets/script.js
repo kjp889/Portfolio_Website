@@ -100,14 +100,14 @@ function opentab(tabname){
 
 /*============Contact Form================*/
 const form = document.querySelector('form');
-const name = document.getElementById("full_name");
+const fulname = document.getElementById("full_name");
 const email = document.getElementById("email_address");
 const phone = document.getElementById("phone_number");
 const subject = document.getElementById("email_subject");
 const mess = document.getElementById("message");
 
 function sendEmail(){
-	const mailBody = `Name: ${name.value}<br>
+	const mailBody = `Name: ${fulname.value}<br>
 	Phone Number: ${phone.value}<br>
 	Email Address: ${email.value}<br><br>
 	Message: ${mess.value}`;
@@ -185,7 +185,7 @@ form.addEventListener("submit", (e) => {
 	e.preventDefault();
 	checkInput();
 
-	if (!name.classList.contains("error") && !email.classList.contains("error") && !phone.classList.contains("error") && !subject.classList.contains("error") && !mess.classList.contains("error")){
+	if (!fulname.classList.contains("error") && !email.classList.contains("error") && !phone.classList.contains("error") && !subject.classList.contains("error") && !mess.classList.contains("error")){
 		sendEmail();
 		//console.log("ok");
 
