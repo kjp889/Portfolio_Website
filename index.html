@@ -258,12 +258,13 @@
 					<div class="error_txt">Subject cannot be blank</div>
 				</div>
 			</div> 
-			<div class="input_field field">
-				<textarea class="item" name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
-				<div class="error_txt">Message cannot be blank</div>
+			<div class="input_field field error">
+				<textarea class="item" name="message" id="message" cols="30" rows="10" placeholder="Your Message cannot be sent at the moment"></textarea>
+				<div class="error_txt">Your Message cannot be sent at the moment</div>
+				<!--Message cannot be blank</div>-->
 			</div>
 			
-			<input type="submit" name="send_message" value="Send Message" class="btn">
+			<input type="submit" name="send_message" value="Send Message" class="btn" disabled="true">
 		</form>
 	</section>
 

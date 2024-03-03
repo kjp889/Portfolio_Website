@@ -476,7 +476,8 @@ span {
 
 .contact form .btn {
 	margin-top: 2rem;
-	cursor: pointer;
+	cursor: not-allowed;
+	
 }
 
 .footer {

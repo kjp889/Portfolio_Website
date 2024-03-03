@@ -112,22 +112,26 @@ function sendEmail(){
 	Email Address: ${email.value}<br><br>
 	Message: ${mess.value}`;
 
-	Email.send({
-		SecureToken: "bef6ec40-9b17-4145-8e1d-4a9e550fbfc2",
+	Email.send(console.log("try"),{
+		Host : "smtp.elasticemail.com",
+		Username : "kjp056@gmail.com",
+		Password : "C1294584303FD860A24CAC9495F2081A7C3A",
 	    To : 'kjp056@gmail.com',
 	    From : "kjp056+website@gmail.com",
 	    Subject : subject.value,
 	    Body : mailBody
 	}).then(
-	  message => {
-	  	if (message == "OK") {
-	  		Swal.fire({
-			  title: "Message Sent Successfully",
-			  text: "Thank you for reaching out",
-			  icon: "success"
-			});
+		console.log("sent"),
+		//message => alert(message)
+	 	message => {
+			if (message == "OK") {
+				Swal.fire({
+				title: "Message Sent Successfully",
+				text: "Thank you for reaching out",
+				icon: "success"
+				});
+			}
 	  	}
-	  }
 	);
 }
 
@@ -187,7 +191,7 @@ form.addEventListener("submit", (e) => {
 
 	if (!fulname.classList.contains("error") && !email.classList.contains("error") && !phone.classList.contains("error") && !subject.classList.contains("error") && !mess.classList.contains("error")){
 		sendEmail();
-		//console.log("ok");
+		console.log("ok");
 
 		form.reset();
 		return false;
