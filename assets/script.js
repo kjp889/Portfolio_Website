@@ -50,7 +50,7 @@ ScrollReveal().reveal(".home-image, .skill-container, .portfolio-box", {
   origin: "bottom",
 });
 ScrollReveal().reveal(".about-image", { origin: "left" });
-
+/*=========TYPED TEXT CHANGING===============*/
 const typed = new Typed(".multiple_text", {
   strings: ["Software Developer", "Photographer", "Graphic Designer"],
   typeSpeed: 100,
